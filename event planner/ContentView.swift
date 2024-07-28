@@ -6,16 +6,37 @@
 //
 
 import SwiftUI
+import Combine
 
+enum Words : String, CaseIterable{
+    case chicken, egg, farm
+}
 struct ContentView: View {
+    
+    @State var selection : Words = .chicken
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        
+        TabView{
+            HomeTab()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            GroupTab()
+                .tabItem { 
+                    Image(systemName: "person")
+                    Text("Group")
+                }
+            SettingsTab()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
         }
-        .padding()
+        .accentColor(.red)
+        
+        
     }
 }
 
