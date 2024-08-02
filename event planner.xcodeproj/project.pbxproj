@@ -12,6 +12,11 @@
 		DF4C97FB2C5608EA0049AC16 /* GroupTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C97F52C55F6490049AC16 /* GroupTab.swift */; };
 		DF4C97FD2C560A850049AC16 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C97FC2C560A850049AC16 /* GroupCell.swift */; };
 		DF4C97FF2C5616140049AC16 /* GroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C97FE2C5616140049AC16 /* GroupPage.swift */; };
+		DF4C98022C5702E20049AC16 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DF4C98012C5702E20049AC16 /* FirebaseAuth */; };
+		DF4C98052C57035F0049AC16 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C98042C57035F0049AC16 /* AuthenticationView.swift */; };
+		DF4C98072C570E250049AC16 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C98062C570E250049AC16 /* SignInEmailView.swift */; };
+		DF4C98092C570FDB0049AC16 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C98082C570FDB0049AC16 /* AuthenticationManager.swift */; };
+		DF4C980B2C5736DA0049AC16 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C980A2C5736DA0049AC16 /* CreateAccountView.swift */; };
 		DF807F172C52B67C0046579E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DF807F162C52B67C0046579E /* FirebaseAnalytics */; };
 		DF807F192C52BA210046579E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF807F182C52BA200046579E /* GoogleService-Info.plist */; };
 		DFFA31C12C4EC7E100AD06D1 /* event_plannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA31C02C4EC7E100AD06D1 /* event_plannerApp.swift */; };
@@ -46,6 +51,10 @@
 		DF4C97F72C55F6530049AC16 /* SettingsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTab.swift; sourceTree = "<group>"; };
 		DF4C97FC2C560A850049AC16 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		DF4C97FE2C5616140049AC16 /* GroupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPage.swift; sourceTree = "<group>"; };
+		DF4C98042C57035F0049AC16 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		DF4C98062C570E250049AC16 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		DF4C98082C570FDB0049AC16 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		DF4C980A2C5736DA0049AC16 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		DF807F182C52BA200046579E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DFFA31BD2C4EC7E100AD06D1 /* event planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "event planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFA31C02C4EC7E100AD06D1 /* event_plannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = event_plannerApp.swift; sourceTree = "<group>"; };
@@ -65,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF807F172C52B67C0046579E /* FirebaseAnalytics in Frameworks */,
+				DF4C98022C5702E20049AC16 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +107,24 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
+		DF4C98002C5702E20049AC16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF4C98032C5703370049AC16 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				DF4C98042C57035F0049AC16 /* AuthenticationView.swift */,
+				DF4C98082C570FDB0049AC16 /* AuthenticationManager.swift */,
+				DF4C98062C570E250049AC16 /* SignInEmailView.swift */,
+				DF4C980A2C5736DA0049AC16 /* CreateAccountView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		DFFA31B42C4EC7E100AD06D1 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +132,7 @@
 				DFFA31D02C4EC7E300AD06D1 /* event plannerTests */,
 				DFFA31DA2C4EC7E300AD06D1 /* event plannerUITests */,
 				DFFA31BE2C4EC7E100AD06D1 /* Products */,
+				DF4C98002C5702E20049AC16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +151,7 @@
 			children = (
 				DF807F182C52BA200046579E /* GoogleService-Info.plist */,
 				DFFA31C02C4EC7E100AD06D1 /* event_plannerApp.swift */,
+				DF4C98032C5703370049AC16 /* Authentication */,
 				DF4C97FA2C5606750049AC16 /* Tabs */,
 				DFFA31C22C4EC7E100AD06D1 /* ContentView.swift */,
 				DFFA31C42C4EC7E200AD06D1 /* Assets.xcassets */,
@@ -173,6 +203,7 @@
 			name = "event planner";
 			packageProductDependencies = (
 				DF807F162C52B67C0046579E /* FirebaseAnalytics */,
+				DF4C98012C5702E20049AC16 /* FirebaseAuth */,
 			);
 			productName = "event planner";
 			productReference = DFFA31BD2C4EC7E100AD06D1 /* event planner.app */;
@@ -292,12 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4C980B2C5736DA0049AC16 /* CreateAccountView.swift in Sources */,
 				DFFA31C32C4EC7E100AD06D1 /* ContentView.swift in Sources */,
 				DF4C97F42C55F6270049AC16 /* HomeTab.swift in Sources */,
 				DF4C97FB2C5608EA0049AC16 /* GroupTab.swift in Sources */,
+				DF4C98092C570FDB0049AC16 /* AuthenticationManager.swift in Sources */,
 				DF4C97FD2C560A850049AC16 /* GroupCell.swift in Sources */,
 				DF4C97F82C55F6530049AC16 /* SettingsTab.swift in Sources */,
 				DF4C97FF2C5616140049AC16 /* GroupPage.swift in Sources */,
+				DF4C98052C57035F0049AC16 /* AuthenticationView.swift in Sources */,
+				DF4C98072C570E250049AC16 /* SignInEmailView.swift in Sources */,
 				DFFA31C12C4EC7E100AD06D1 /* event_plannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +670,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DF4C98012C5702E20049AC16 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF807F152C52B67C0046579E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		DF807F162C52B67C0046579E /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DF807F152C52B67C0046579E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

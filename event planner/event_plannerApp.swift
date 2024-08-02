@@ -4,9 +4,10 @@
 //
 //  Created by Aditya Patwal on 7/22/24.
 //
-
+ 
 import SwiftUI
 import FirebaseCore
+import FirebaseAuth
 
 
 
@@ -16,7 +17,10 @@ struct event_plannerApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                AuthenticationView()
+            }
+            
         }
     }
 }
