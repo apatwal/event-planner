@@ -6,3 +6,19 @@
 //
 
 import Foundation
+import Combine
+import SwiftUI
+
+struct AddGroupView: View{
+    
+    
+    var body : some View{
+        Text("Add Group")
+    }
+    
+    
+}
+
+#Preview {
+    AddGroupView()
+}

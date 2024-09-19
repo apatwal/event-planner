@@ -21,17 +21,14 @@ struct GroupTab: View{
             .navigationTitle("Groups")
             .listStyle(PlainListStyle())
             .toolbar {
-                            ToolbarItem(placement: .navigationBarTrailing) {
-                                Button(action: {
-                                    // Action to create a new group
-                                    
-                                })
-                                {
-                                    Image(systemName:"plus")
-                                    
-                                }
-                            }
-                        }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: AddGroupView())
+                    {
+                        Image(systemName:"plus")
+                        
+                    }
+                }
+            }
             
         }
     }

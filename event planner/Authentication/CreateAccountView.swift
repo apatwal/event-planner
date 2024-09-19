@@ -11,6 +11,9 @@ import SwiftUI
 final class CreateAccountViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
+    @Published var firstName = ""
+    @Published var lastName = ""
+    @Published var userName = ""
     
     func createAccount() {
         guard !email.isEmpty, !password.isEmpty else {
@@ -20,7 +23,7 @@ final class CreateAccountViewModel: ObservableObject {
         
         Task{
             do {
-                let returnedUserData: () = try await AuthenticationManager.shared.createUser(email: email, password: password)
+                let returnedUserData: () = try await AuthenticationManager.shared.createUser(email: email, password: password, firstName: firstName, lastName: lastName, username: userName)
                 print("Success")
                 print(returnedUserData)
             } catch {
@@ -34,17 +37,63 @@ struct CreateAccountView: View {
     @StateObject private var viewModel = CreateAccountViewModel()
     var body: some View {
         VStack {
-            TextField("Email...", text: $viewModel.email)
-                .padding()
-                .background(Color.gray.opacity(0.4))
-                .cornerRadius(10)
-                .keyboardType(.emailAddress)
-                .autocapitalization(.none)
+            // First Name   Last Name
+            HStack{
+                VStack(alignment: .leading){
+                    Text("First Name")
+                    TextField("", text: $viewModel.firstName)
+                        .padding()
+                        .background(Color.gray.opacity(0.4))
+                        .cornerRadius(10)
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.words)
+                }
+                
+                VStack(alignment: .leading){
+                    Text("Last Name")
+                    TextField("", text: $viewModel.lastName)
+                        .padding()
+                        .background(Color.gray.opacity(0.4))
+                        .cornerRadius(10)
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.words)
+                }
+                
+            }
+            .padding(.bottom)
+            // Username
+            VStack(alignment: .leading){
+                Text("Username")
+                TextField("", text: $viewModel.userName)
+                    .padding()
+                    .background(Color.gray.opacity(0.4))
+                    .cornerRadius(10)
+                    .keyboardType(.emailAddress)
+                    .autocapitalization(.none)
+            }
+            .padding(.bottom)
             
-            SecureField("Password...", text: $viewModel.password)
-                .padding()
-                .background(Color.gray.opacity(0.4))
-                .cornerRadius(10)
+            VStack(alignment: .leading){
+                Text("Email")
+                TextField("", text: $viewModel.email)
+                    .padding()
+                    .background(Color.gray.opacity(0.4))
+                    .cornerRadius(10)
+                    .keyboardType(.emailAddress)
+                    .autocapitalization(.none)
+            }
+            .padding(.bottom)
+            
+            
+            VStack(alignment: .leading){
+                Text("Password")
+                SecureField("", text: $viewModel.password)
+                    .padding()
+                    .background(Color.gray.opacity(0.4))
+                    .cornerRadius(10)
+            }
+            .padding(.bottom)
+            
             
             Button {
                 

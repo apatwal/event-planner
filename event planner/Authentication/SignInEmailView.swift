@@ -42,17 +42,24 @@ struct SignInEmailView: View {
         
         NavigationStack{
             VStack {
-                TextField("Email...", text: $viewModel.email)
-                    .padding()
-                    .background(Color.gray.opacity(0.4))
-                    .cornerRadius(10)
-                    .keyboardType(.emailAddress)
-                    .autocapitalization(.none)
+                VStack(alignment: .leading){
+                    Text("Email")
+                    TextField("", text: $viewModel.email)
+                        .padding()
+                        .background(Color.gray.opacity(0.4))
+                        .cornerRadius(10)
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.none)
+                }.padding(.bottom)
                 
-                SecureField("Password...", text: $viewModel.password)
-                    .padding()
-                    .background(Color.gray.opacity(0.4))
-                    .cornerRadius(10)
+                VStack(alignment: .leading){
+                    Text("Password")
+                    SecureField("", text: $viewModel.password)
+                        .padding()
+                        .background(Color.gray.opacity(0.4))
+                        .cornerRadius(10)
+                }.padding(.bottom)
+                
                 Button() {
                     viewModel.signIn()
                 } label: {

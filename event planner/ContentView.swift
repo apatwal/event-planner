@@ -8,12 +8,8 @@
 import SwiftUI
 import Combine
 
-enum Words : String, CaseIterable{
-    case chicken, egg, farm
-}
 struct ContentView: View {
     
-    @State var selection : Words = .chicken
     var body: some View {
         
         

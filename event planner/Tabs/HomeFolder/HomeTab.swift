@@ -12,9 +12,17 @@ struct HomeTab: View{
     
     
     var body : some View{
-        VStack{
-            Text("HomePage")
-            
+        NavigationView{
+            Text("Homepage")
+                .toolbar {
+                                ToolbarItem(placement: .navigationBarTrailing) {
+                                    NavigationLink(destination: AddFriendPage())
+                                    {
+                                        Image(systemName:"person.fill.badge.plus")
+                                        
+                                    }
+                                }
+                            }
         }
     }
 }

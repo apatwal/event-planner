@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0DF63B2C631A84004BAACA /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DF63A2C631A84004BAACA /* UserManager.swift */; };
+		DF0DF63D2C631AFD004BAACA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DF0DF63C2C631AFD004BAACA /* FirebaseFirestore */; };
+		DF0DF63F2C631B14004BAACA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DF0DF63E2C631B14004BAACA /* FirebaseFirestoreSwift */; };
+		DF0DF6422C643C0B004BAACA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DF6412C643C0B004BAACA /* User.swift */; };
+		DF0DF6442C643C13004BAACA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DF6432C643C13004BAACA /* Group.swift */; };
+		DF0DF6462C644082004BAACA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DF6452C644082004BAACA /* Event.swift */; };
+		DF0DF6482C645CAF004BAACA /* AddFriendPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DF6472C645CAF004BAACA /* AddFriendPage.swift */; };
+		DF0DF64A2C6C5C92004BAACA /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DF6492C6C5C92004BAACA /* AddGroupView.swift */; };
 		DF4C97F42C55F6270049AC16 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C97F32C55F6270049AC16 /* HomeTab.swift */; };
 		DF4C97F82C55F6530049AC16 /* SettingsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C97F72C55F6530049AC16 /* SettingsTab.swift */; };
 		DF4C97FB2C5608EA0049AC16 /* GroupTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C97F52C55F6490049AC16 /* GroupTab.swift */; };
@@ -19,6 +27,7 @@
 		DF4C980B2C5736DA0049AC16 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C980A2C5736DA0049AC16 /* CreateAccountView.swift */; };
 		DF807F172C52B67C0046579E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DF807F162C52B67C0046579E /* FirebaseAnalytics */; };
 		DF807F192C52BA210046579E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF807F182C52BA200046579E /* GoogleService-Info.plist */; };
+		DF9F40142C6C6F6400686770 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F40132C6C6F6400686770 /* UserProfile.swift */; };
 		DFFA31C12C4EC7E100AD06D1 /* event_plannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA31C02C4EC7E100AD06D1 /* event_plannerApp.swift */; };
 		DFFA31C32C4EC7E100AD06D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA31C22C4EC7E100AD06D1 /* ContentView.swift */; };
 		DFFA31C52C4EC7E200AD06D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFA31C42C4EC7E200AD06D1 /* Assets.xcassets */; };
@@ -46,8 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF0DF63A2C631A84004BAACA /* UserManager.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		DF0DF6412C643C0B004BAACA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF0DF6432C643C13004BAACA /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		DF0DF6452C644082004BAACA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		DF0DF6472C645CAF004BAACA /* AddFriendPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendPage.swift; sourceTree = "<group>"; };
+		DF0DF6492C6C5C92004BAACA /* AddGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupView.swift; sourceTree = "<group>"; };
 		DF4C97F32C55F6270049AC16 /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
-		DF4C97F52C55F6490049AC16 /* GroupTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupTab.swift; path = "event planner/Tabs/GroupTab.swift"; sourceTree = SOURCE_ROOT; };
+		DF4C97F52C55F6490049AC16 /* GroupTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupTab.swift; path = "event planner/Tabs/GroupsFolder/GroupTab.swift"; sourceTree = SOURCE_ROOT; };
 		DF4C97F72C55F6530049AC16 /* SettingsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTab.swift; sourceTree = "<group>"; };
 		DF4C97FC2C560A850049AC16 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		DF4C97FE2C5616140049AC16 /* GroupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPage.swift; sourceTree = "<group>"; };
@@ -56,6 +71,7 @@
 		DF4C98082C570FDB0049AC16 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		DF4C980A2C5736DA0049AC16 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		DF807F182C52BA200046579E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DF9F40132C6C6F6400686770 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		DFFA31BD2C4EC7E100AD06D1 /* event planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "event planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFA31C02C4EC7E100AD06D1 /* event_plannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = event_plannerApp.swift; sourceTree = "<group>"; };
 		DFFA31C22C4EC7E100AD06D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +91,8 @@
 			files = (
 				DF807F172C52B67C0046579E /* FirebaseAnalytics in Frameworks */,
 				DF4C98022C5702E20049AC16 /* FirebaseAuth in Frameworks */,
+				DF0DF63D2C631AFD004BAACA /* FirebaseFirestore in Frameworks */,
+				DF0DF63F2C631B14004BAACA /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,14 +113,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF4C97FA2C5606750049AC16 /* Tabs */ = {
+		DF0DF6362C630552004BAACA /* GroupsFolder */ = {
 			isa = PBXGroup;
 			children = (
 				DF4C97F52C55F6490049AC16 /* GroupTab.swift */,
+				DF0DF6492C6C5C92004BAACA /* AddGroupView.swift */,
 				DF4C97FC2C560A850049AC16 /* GroupCell.swift */,
 				DF4C97FE2C5616140049AC16 /* GroupPage.swift */,
+			);
+			path = GroupsFolder;
+			sourceTree = "<group>";
+		};
+		DF0DF6372C630573004BAACA /* SettingFolder */ = {
+			isa = PBXGroup;
+			children = (
 				DF4C97F72C55F6530049AC16 /* SettingsTab.swift */,
+			);
+			path = SettingFolder;
+			sourceTree = "<group>";
+		};
+		DF0DF6382C63057D004BAACA /* HomeFolder */ = {
+			isa = PBXGroup;
+			children = (
 				DF4C97F32C55F6270049AC16 /* HomeTab.swift */,
+				DF0DF6472C645CAF004BAACA /* AddFriendPage.swift */,
+			);
+			path = HomeFolder;
+			sourceTree = "<group>";
+		};
+		DF0DF6392C631A50004BAACA /* UserFunctionality */ = {
+			isa = PBXGroup;
+			children = (
+				DF0DF63A2C631A84004BAACA /* UserManager.swift */,
+			);
+			path = UserFunctionality;
+			sourceTree = "<group>";
+		};
+		DF0DF6402C643BE8004BAACA /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				DF0DF6412C643C0B004BAACA /* User.swift */,
+				DF0DF6432C643C13004BAACA /* Group.swift */,
+				DF0DF6452C644082004BAACA /* Event.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		DF4C97FA2C5606750049AC16 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				DF0DF6382C63057D004BAACA /* HomeFolder */,
+				DF0DF6362C630552004BAACA /* GroupsFolder */,
+				DF0DF6372C630573004BAACA /* SettingFolder */,
+				DF9F40132C6C6F6400686770 /* UserProfile.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -151,6 +214,8 @@
 			children = (
 				DF807F182C52BA200046579E /* GoogleService-Info.plist */,
 				DFFA31C02C4EC7E100AD06D1 /* event_plannerApp.swift */,
+				DF0DF6392C631A50004BAACA /* UserFunctionality */,
+				DF0DF6402C643BE8004BAACA /* Structs */,
 				DF4C98032C5703370049AC16 /* Authentication */,
 				DF4C97FA2C5606750049AC16 /* Tabs */,
 				DFFA31C22C4EC7E100AD06D1 /* ContentView.swift */,
@@ -204,6 +269,8 @@
 			packageProductDependencies = (
 				DF807F162C52B67C0046579E /* FirebaseAnalytics */,
 				DF4C98012C5702E20049AC16 /* FirebaseAuth */,
+				DF0DF63C2C631AFD004BAACA /* FirebaseFirestore */,
+				DF0DF63E2C631B14004BAACA /* FirebaseFirestoreSwift */,
 			);
 			productName = "event planner";
 			productReference = DFFA31BD2C4EC7E100AD06D1 /* event planner.app */;
@@ -323,14 +390,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF0DF6422C643C0B004BAACA /* User.swift in Sources */,
 				DF4C980B2C5736DA0049AC16 /* CreateAccountView.swift in Sources */,
+				DF0DF63B2C631A84004BAACA /* UserManager.swift in Sources */,
 				DFFA31C32C4EC7E100AD06D1 /* ContentView.swift in Sources */,
+				DF0DF6462C644082004BAACA /* Event.swift in Sources */,
 				DF4C97F42C55F6270049AC16 /* HomeTab.swift in Sources */,
 				DF4C97FB2C5608EA0049AC16 /* GroupTab.swift in Sources */,
 				DF4C98092C570FDB0049AC16 /* AuthenticationManager.swift in Sources */,
+				DF9F40142C6C6F6400686770 /* UserProfile.swift in Sources */,
+				DF0DF6442C643C13004BAACA /* Group.swift in Sources */,
 				DF4C97FD2C560A850049AC16 /* GroupCell.swift in Sources */,
 				DF4C97F82C55F6530049AC16 /* SettingsTab.swift in Sources */,
 				DF4C97FF2C5616140049AC16 /* GroupPage.swift in Sources */,
+				DF0DF64A2C6C5C92004BAACA /* AddGroupView.swift in Sources */,
+				DF0DF6482C645CAF004BAACA /* AddFriendPage.swift in Sources */,
 				DF4C98052C57035F0049AC16 /* AuthenticationView.swift in Sources */,
 				DF4C98072C570E250049AC16 /* SignInEmailView.swift in Sources */,
 				DFFA31C12C4EC7E100AD06D1 /* event_plannerApp.swift in Sources */,
@@ -670,6 +744,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DF0DF63C2C631AFD004BAACA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF807F152C52B67C0046579E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DF0DF63E2C631B14004BAACA /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF807F152C52B67C0046579E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
 		DF4C98012C5702E20049AC16 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DF807F152C52B67C0046579E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

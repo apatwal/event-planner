@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+
+struct Event{
+    var eventId: String
+    var eventName: String
+    var eventDate: Date
+    var eventAddress: String
+    var eventAttendance: Int
+    
+    init(eventId: String, eventName: String, eventDate: Date, eventAddress: String, eventAttendance: Int) {
+        self.eventId = eventId
+        self.eventName = eventName
+        self.eventDate = eventDate
+        self.eventAddress = eventAddress
+        self.eventAttendance = eventAttendance
+    }
+}
